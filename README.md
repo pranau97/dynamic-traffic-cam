@@ -32,5 +32,5 @@ Tested on Raspbian Jessie.
 ### Running the project
 
 To run the script, 
-1. ssh onto a Raspberry Pi and clone the repository.
+1. `ssh` onto a Raspberry Pi and clone the repository.
 2. Run `python3 sample.py`
