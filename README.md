@@ -21,8 +21,16 @@ traffic density as cameras are very much cheaper than other devises such as sens
 
 Tested on Raspbian Jessie.
 
+### Setting up the data visualization
+
+1. Log onto your ThingSpeak account.
+2. Create a channel.
+3. Get the API write key for the channel.
+4. Paste the value in `sample.py`
+5. Once the script is running on the Pi (directions below) the data can be seen on the ThingSpeak dashboard.
+
 ### Running the project
 
 To run the script, 
 1. ssh onto a Raspberry Pi and clone the repository.
-2. Run ````python3 sample.py````
+2. Run `python3 sample.py`
