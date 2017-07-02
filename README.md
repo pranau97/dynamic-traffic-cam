@@ -27,7 +27,8 @@ Tested on Raspbian Jessie.
 2. Create a channel.
 3. Get the API write key for the channel.
 4. Paste the value in `sample.py`
-5. Once the script is running on the Pi (directions below) the data can be seen on the ThingSpeak dashboard.
+5. Add the `analysis.m` file to the channel.
+6. Once the script is running on the Pi (directions below) the data can be seen on the ThingSpeak dashboard.
 
 ### Running the project
 
