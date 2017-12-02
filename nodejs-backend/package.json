@@ -1,0 +1,39 @@
+{
+  "name": "traffic-cam-backend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "angular": "^1.6.7",
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.2.0",
+    "express": "^4.13.4",
+    "morgan": "^1.6.1",
+    "mysql": "^2.15.0",
+    "pg-promise": "^5.6.4",
+    "pug": "^2.0.0-beta11",
+    "querystring": "^0.2.0",
+    "request": "^2.83.0",
+    "serve-favicon": "^2.3.2",
+    "socket.io": "^2.0.4"
+  },
+  "description": "Idea implementation for Rajasthan Hackathon 3.0",
+  "main": "bin/www",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vaibzz/smart-traffic-manager.git"
+  },
+  "keywords": [
+    "Node.js"
+  ],
+  "author": "Pranau Kumar",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/Vaibzz/smart-traffic-manager/issues"
+  },
+  "homepage": "https://github.com/Vaibzz/smart-traffic-manager#readme"
+}
