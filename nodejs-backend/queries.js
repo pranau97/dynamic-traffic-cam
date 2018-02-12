@@ -1,7 +1,7 @@
 var express = require("express");
 var mysql = require('mysql');
 var moment = require('moment');
-var request =require('request');
+var request = require('request');
 var queryString = require('querystring');
 var app = express();
 
@@ -16,9 +16,9 @@ connectionLimit- number of simultaneous connections to the DB.
 var pool = mysql.createPool({
   connectionLimit: 100,
   host: 'localhost',
-  user: 'pranau',
-  password: 'Romajikolpo09*',
-  database: 'traffic',
+  user: '',
+  password: '',
+  database: '',
   debug: false
 });
 
@@ -58,25 +58,31 @@ function postData(req, res) {
       }
     });
   });
-  var key = 'C2JR3L7ILWRZLHQL';
-  request( 
-    { uri : 'http://api.thingspeak.com:80', 
-      body: { 'field1': m1, 'field2': m2, 'field3': m3, 'field4': m4, 'field5': 12.93496, 'field6': 79.14688, 'key': key },
-      headers: { "Content-typZZe": "application/x-www-form-urlencoded", "Accept": "text/plain" },
+  var key = '';
+  request({
+      uri: 'http://api.thingspeak.com:80',
+      body: {
+        'field1': m1,
+        'field2': m2,
+        'field3': m3,
+        'field4': m4,
+        'field5': 12.93496,
+        'field6': 79.14688,
+        'key': key
+      },
+      headers: {
+        "Content-typZZe": "application/x-www-form-urlencoded",
+        "Accept": "text/plain"
+      },
       method: 'POST'
     },
-  function (error, response, body) {
+    function (error, response, body) {
       if (!error && response.statusCode == 200) {
         console.log(body)
       }
-  },
+    },
   );
   var secret = '';
-  request(
-    {
-      uri: 
-    }
-  );
 }
 
 module.exports = {
