@@ -1,8 +1,6 @@
 # Dynamic Traffic Monitoring System
 
-The system uses image processing to control traffic. Traffic density
-of lanes is calculated using image processing which is done using images of lanes that are captured
-using a camera and compared to reference images of lanes with no traffic. According to the traffic densities on all roads, our model will allocate intelligently the time period of green light for each road. We have chosen image processing for calculation of traffic density as cameras are readily available infrastructure on road intersections.
+The system uses image processing to control traffic. Traffic density of lanes is calculated using image processing which is done using images of lanes that are captured using a camera and compared to reference images of lanes with no traffic. According to the traffic densities on all roads, our model will allocate intelligently the time period of green light for each road. We have chosen image processing for calculation of traffic density as cameras are readily available infrastructure on road intersections.
 
 ## Requirements
 
